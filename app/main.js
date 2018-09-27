@@ -23,7 +23,7 @@ const {
 // });
 
 var spawn = require('child_process').spawn
-var free = spawn('java', ['-jar', `${__dirname}/war/wire2.war`]);
+var free = spawn('java', ['-jar', `${__dirname}/war/wire.war`]);
 
 let win;
 
@@ -37,10 +37,10 @@ function createWindow() {
 
     // win.setMenu(null);
 
-    win.loadFile(`${__dirname}/test/test.html`);
+    win.loadFile(`${__dirname}/html/loading/loading.html`);
 
     setTimeout(() => {
-        win.loadFile(`${__dirname}/html/index.html`);
+        win.loadFile(`${__dirname}/index.html`);
     }, 3000);
 
     //控制台

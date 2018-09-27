@@ -1,0 +1,12 @@
+<div ng-app="index">
+    <div class="container-fluid">
+        <div>
+            <h3 class="col-md-12" style="text-align:center">设备列表</h3>
+        </div>
+        <div class="top">
+            <div ng-repeat="x in devices">
+                <button ng-bind="x.state" class="btn btn-primary col-md-12 col-xs-12" ng-click="btclick(x.id)" style="text-align:left"></button>
+            </div>
+        </div>
+    </div>
+</div>
