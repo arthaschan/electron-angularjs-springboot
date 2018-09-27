@@ -11,9 +11,13 @@ app.controller('mainController', ['$scope', '$http', function ($scope, $http) {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
     }).then(function (response) {
-        $scope.devices = response.data.state;
+        $scope.devices = response.data
     }, function errorCallback(response) {
         console.log('失败');
     });
+
+    $scope.btclick = function (id) {
+        alert(id);
+    }
 
 }]);

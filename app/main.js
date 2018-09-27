@@ -23,7 +23,7 @@ const {
 // });
 
 var spawn = require('child_process').spawn
-var free = spawn('java', ['-jar', `${__dirname}/war/wire.war`]);
+var free = spawn('java', ['-jar', `${__dirname}/war/wire2.war`]);
 
 let win;
 

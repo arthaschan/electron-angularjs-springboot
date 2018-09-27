@@ -21,7 +21,7 @@
         </div>
         <div class="top">
             <div ng-repeat="x in devices">
-                <button ng-bind="x" class="btn btn-primary col-md-12 col-xs-12 "></button>
+                <button ng-bind="x.state" class="btn btn-primary col-md-12 col-xs-12" ng-click="btclick(x.id)" style="text-align:left"></button>
             </div>
         </div>
     </div>
