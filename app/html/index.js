@@ -11,16 +11,7 @@ app.controller('mainController', ['$scope', '$http', function ($scope, $http) {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
     }).then(function (response) {
-        var str = "";
-        angular.forEach(response.data.state, function (i) {
-            if (str !== "") {
-                $scope.text = str + "\n" + i;
-                str = $scope.text;
-            } else {
-                $scope.text = i;
-                str = $scope.text;
-            }
-        });
+        $scope.devices = response.data.state;
     }, function errorCallback(response) {
         console.log('失败');
     });
