@@ -10,10 +10,10 @@ index.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
         url: '/index',
         controller: 'mainController',
         templateUrl: 'html/devices/devices.html'
-    }).state('loading', {
-        url: '/loading',
-        controller: 'loadingController',
-        templateUrl: 'html/devices/devices.html'
+    }).state('intercept', {
+        url: '/intercept',
+        controller: 'interceptController',
+        templateUrl: 'html/intercept/intercept.html'
     });
 
 }]);
